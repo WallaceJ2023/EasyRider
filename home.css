@@ -1,0 +1,336 @@
+.header-color {
+    background: #fff;
+    position: fixed;
+    width:100%;
+
+    z-index: 2;
+}
+
+.logo-easy {
+    color: #26A6D1;
+    display: inline-block;
+    cursor: not-allowed; 
+    user-select: none; 
+}
+
+
+.btn-conhecer {
+    transition: transform 0.3s, color 0.3s; 
+}
+
+.btn-conhecer:hover {
+    text-decoration: none;
+    transform: scale(1.1); 
+    color: #ff5733; 
+}
+
+
+
+ul li .text {
+    color: #000 ;
+}
+
+ul li .text:hover{
+    color: #26A6D1;
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link::before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px; /* Altura da barra */
+    background-color: #26A6D1; /* Cor da barra */
+    position: absolute;
+    bottom: -3px; /* Ajuste a posição vertical da barra conforme necessário */
+    left: 0;
+    transition: width 0.5s; /* Duração da transição */
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    backdrop-filter: blur(10px); /* Ajuste o valor de desfoque conforme desejado */
+    background-color: rgba(255, 255, 255, 0.8); /* Ajuste a cor e a transparência conforme desejado */
+    z-index: 1;
+}
+
+.header-blur {
+    backdrop-filter: blur(5px); /* Ajuste o valor do blur conforme necessário */
+    transition: backdrop-filter 0.3s ease;
+}
+
+#site-header {
+    backdrop-filter: blur(0);
+    transition: backdrop-filter 0.5s ease;
+}
+
+
+.gap {
+    display: flex;
+    gap: 20px;
+}
+
+#toggle-button {
+    margin-top: 10px;
+}
+
+#text {
+    max-height: 100px; /* Altura inicial para exibir apenas 3 linhas */
+    overflow: hidden;
+    transition: max-height 0.5s ease;
+}
+
+#text.expanded {
+    max-height: none; /* Exibe o texto completo */
+}
+
+
+.card {
+    width: 400px;
+    height: 350px;
+    background: #f9f6f6;
+    border-radius: 10px;
+    border: #f9f6f6;
+
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.card:hover {
+    cursor: pointer;
+    transform: translateY(-5px); 
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);    
+}
+
+.buttonCard { 
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 58px; 
+    font-size: 20px;
+    color: #fff;
+    background: #30C48F;
+}
+
+.buttonCard:hover {
+    color: #fff;
+    background: #109767;
+}
+
+.btn-reservar {
+    background: #164656; 
+    color: #fff;
+}
+
+.btn-reservar:hover {
+    color: #fff;
+    background: #1A647C;
+}
+
+body{
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+/* Gera um quadrado responsivo. */
+.square{
+    width: 48%;
+    height: 2; /* A mágica está aqui */
+    padding-bottom: 48%; /* ... e está aqui */
+    margin: 1%;
+    float: left;
+    position: relative;
+}
+
+/*
+    Veja mais sobre como centralizar o texto no box aqui:
+    http://css-tricks.com/centering-in-the-unknown/
+*/
+.block{
+  position: absolute;
+  text-align: center;
+  background: #1a1a1a;
+  width: 100%;
+  height: 100%;
+}
+ 
+.block:before {
+  content: '';
+  display: inline-block;
+  height: 100%; 
+  vertical-align: middle;
+  margin-right: -0.25em;
+ }
+ 
+.centered {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80%;
+  background: #222;
+  color: #FFF;
+ }
+
+//
+/* Estilo para a lista de motos */
+.motos-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.motos-list-container {
+    max-height: 491px;
+    overflow-y: auto; /* Adicione uma barra de rolagem vertical quando necessário */
+}
+
+/* Estilo para cada moto na lista */
+.moto {
+    display: flex;
+    gap: 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 7px;
+    width: 520px;
+}
+
+#motos-list h2 {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+#moto-list p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Estilize a barra de rolagem na lista de motos */
+.motos-list-container::-webkit-scrollbar {
+    width: 8px; /* Largura da barra de rolagem */
+    background-color: #f9f6f6; /* Cor de fundo da barra de rolagem */
+    border-radius: 4px; /* Borda arredondada da barra de rolagem */
+}
+
+/* Estilize o pega da barra de rolagem */
+.motos-list-container::-webkit-scrollbar-thumb {
+    background-color: #26A6D1; /* Cor da barra de rolagem */
+    border-radius: 4px; /* Borda arredondada da barra de rolagem */
+}
+
+/* Estilize a barra de rolagem quando estiver passando o mouse sobre ela */
+.motos-list-container::-webkit-scrollbar-thumb:hover {
+    background-color: #1c87ab; /* Cor da barra de rolagem ao passar o mouse */
+}
+
+#imgmoto {
+    width: 70px;
+    height: 50px;
+}
+/* Estilizar o select */
+.form-select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    background-color: transparent;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    appearance: none;
+}
+
+/* Estilizar as opções */
+.form-select option {
+    color: #000;    
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+/* Alterar a cor de fundo ao passar o mouse */
+.form-select option:hover {
+    background-color: red;
+}
+
+#sobre h2 {
+    color: #26A6D1;
+}
+
+#sobre p { 
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+#sobre p:hover {
+    cursor: pointer;
+    transform: translateY(-5px);    
+}
+
+  #map {
+    width: 100%;
+    height: calc(100vh - 100px);
+    margin-top: 100px;
+    z-index: 1; /* Defina um valor menor para o z-index do mapa */
+    /* O restante do seu estilo para o mapa... */
+  }
+  
+  .h3 {
+    font-size: 16px;
+  }
+
+  .p{
+    font-size: 14px;
+    opacity: 50%;
+  }
+
+.card-services {
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card-services:hover {
+    cursor: pointer;
+    transform: translateY(-5px);    
+}
+
+/* Estilo para caixa de seleção marcada */
+label {
+    color: #000; /* Cor do texto quando marcado */ 
+    opacity: 60%;  
+}
+
+input[type="checkbox"]:checked + label {
+    color: #000; /* Cor do texto quando marcado */ 
+    opacity: 100%;  
+}
+
+#meuCheckbox {
+    cursor: pointer;
+}
+
+.with-hover-lights {
+    position: relative;
+    overflow: hidden;
+}
+
+.hover-lights-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 70%;
+    background-color: #26A6D1;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.with-hover-lights:hover .hover-lights-container::before {
+    opacity: 0.2; /* Ajuste conforme necessário */
+}

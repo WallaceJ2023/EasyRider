@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EasyRider</title>
+    <!-- Inclua o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Inclua o seu arquivo CSS personalizado -->
+    <link rel="stylesheet" href="./home.css">
+</head>
+<body>
+    <header class="header-color" style="z-index: 2; position: relative;">
+        <div class="container text-white py-2 d-flex justify-content-between align-items-center">
+            <div class="logo-easy">
+                <img src="assets/logo1.JPG" alt="Logo no Canto Superior Esquerdo" class="corner-logo" style="width: 400px; height: 50px;">
+            </div>
+     
+            <nav>
+                <ul class="d-flex flex-row navbar-nav ml-auto gap">
+                    <li class="nav-item">
+                        <a class="nav-link text" href="#home">Página Inicial</a>
+                    </li>
+                   
+                    <li class="nav-item">
+                        <a class="nav-link text" href="#servicos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text" href="#sobre">Sobre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text rounded p-2 btn-conhecer" style="border: 2px solid #26A6D1;" href="#conhecer">Quero conhecer</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+
+    <main style="background: #f9f6f6; color:#000;">
+        <section id="home" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div>
+                <h1 class="w-100" style="font-size: 35px; margin-top: 150px;">Tecnologia para soluções de mobilidade corporativa e elétrica.</h1>
+                <div class="rounded" style="width: 50px; height: 5px; background: #26A6D1;"></div>
+                <p class="w-75 mt-4" id="text">
+                    Na EasyRider, acreditamos que a mobilidade sustentável pode ser emocionante e acessível. 
+                    Com nossas motos elétricas de última geração, você pode explorar a cidade ou as estradas
+                     sinuosas com facilidade, silêncio e zero emissões de carbono. Seja para uma viagem rápida 
+                     pela cidade, um passeio panorâmico no campo ou uma aventura épica, nossas motos estão prontas
+                    para te levar lá.
+                </p>
+                <button type="button" id="toggle-button" class="btn" style="background: #26A6D1; color: #fff; border-radius: 50px;">Ler mais</button>
+            </div>
+            
+            
+            
+            
+            <div style="margin-top: 100px;">
+                <img style="width:550px; height: 500px;" src="./assets/mto1.png" width="100px" />
+            </div>
+        </section>
+
+        <section id="servicos" class="container" style="height: 100vh;">
+            <div class="d-flex w-100 gap align-items-center justify-content-center h-100">
+                 <!-- card1 -->
+                <div class="card flex-fill">
+                    <div class="d-flex" style=" padding: 20px;">
+                       <div style="margin-top: 110px;">
+                        <h2 class="font-weight-bold" style="font-size: 15px;">Procura por Estações de Recarga</h2>
+                        <span style="font-size: 12px;">
+                            <img style="margin-right: 10px;" src="./assets/moldeCarregador.svg "/>
+                            AC 3.3kw
+                        </span>
+                       </div>
+                        <img style="width: 140px; height: 160px; margin-top: 50px; margin-right: -12px;" src="./assets/carregadorservice.png" />
+                    </div>
+                   
+
+                    <button type="button" class="btn buttonCard">
+                        <a style="color: #fff; text-decoration: none;" href="#estacoes">
+                            ACESSAR SERVIÇO
+                        </a> 
+                    </button>
+                </div>
+                 <!-- card2 -->
+                 <div class="card flex-fill">
+                    <div class="d-flex" style=" padding: 20px;">
+                       <div style="margin-top: 110px; margin-right: 20px;">
+                        <h2 class="font-weight-bold" style="font-size: 15px;">Alugue sua Moto</h2>
+                        <span style="font-size: 12px;">
+                            <img style="margin-right: 10px;" src="./assets/bateria.svg "/>
+                            100% ~ 197 km 
+                        </span>
+                       </div>
+                        <img style="width: 180px; height: 140px; margin-top: 50px; margin-right: -100px;"  src="./assets/motoservices.png" />
+                    </div>
+                   
+
+                    <button type="button" class="btn buttonCard">
+                    <a style="color: #fff; text-decoration: none;" href="#aluguel">
+                        ACESSAR SERVIÇO
+                    </a>    
+                    </button>
+                </div>
+                <!-- card3 -->
+                <div class="card flex-fill">
+                    <div class="d-flex" style=" padding: 20px;">
+                       <div style="margin-top: 110px; margin-right: 30px;">
+                        <h2 class="font-weight-bold" style="font-size: 15px;">Acessar planos</h2>
+                        <span style="font-size: 12px;">
+                            <?xml version="1.0" encoding="UTF-8"?><svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#icon-3afbe226353e4f38)"><path d="M42 20V39C42 40.6569 40.6569 42 39 42H9C7.34315 42 6 40.6569 6 39V9C6 7.34315 7.34315 6 9 6H30" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/><path d="M16 20L26 28L41 7" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="icon-3afbe226353e4f38"><rect width="48" height="48" fill="#333"/></clipPath></defs></svg>    
+                            Seguro
+                        </span>
+                       </div>
+                        <img  style="width: 170px; height: 170px; margin-top: 50px;"  src="./assets/seguroservices.png" />
+                    </div>
+                   
+
+                    <button type="button" class="btn buttonCard">
+                        <a style="color: #fff; text-decoration: none;" href="#planos">
+                            ACESSAR SERVIÇO
+                        </a> 
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section id="sobre" class="container d-flex flex-column align-items-center justify-content-center" style="height: 100vh;">
+            <h2 style="font-size: 40px; font-weight: 600;">Sobre</h2>
+           <div style="width: 850px;">
+            <p style="font-size: 16px; font-weight: 400;">
+                  A EasyRider foi criada com uma visão clara em mente: tornar as viagens urbanas mais sustentáveis. 
+                As motocicletas elétricas produzem zero emissões diretas e são carregadas com eletricidade de fontes 
+                renováveis ​​sempre que possível. A empresa promove a reciclagem responsável de suas baterias e componentes. 
+                A EasyRider não é apenas uma locadora de motocicletas elétricas, é uma comunidade comprometida com a causa
+                da sustentabilidade.
+            </p>
+            <p>
+                EasyRider oferece uma maneira emocionante e responsável de explorar as cidades e paisagens do nosso Brasil. 
+                A empresa está a preparar o caminho para um futuro mais limpo, mais acessível e sustentável, onde todos podem 
+                fazer parte da solução. Então junte-se à revolução EasyRider e descubra como você pode viajar de forma consciente.
+            </p>
+           </div>
+               
+        </section>
+
+        
+        <section id="aluguel" class="container d-flex align-items-center justify-content-center gap" style="height: 100vh;">
+            <div class="p-3 w-50" id="aluguelInfos" style="border-radius: 10px; background: #f9f6f6; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                <img id="imagem" src="./assets/harley-davidson.png" alt="" class="w-100"/>
+                <div class="d-flex align-items-center justify-content-between">
+                    <div>
+                        <h2 class="font-weight-bold" id="nomeMoto">Harley-Davidson LiveWire</h2>
+        
+                        <span>
+                            <img src="./assets/bateria.svg" id="bateriaInfo"/>
+                            <span id="bateria">100% ~ <span id="quilometragemInfo">197 km</span></span>          
+                         </span>
+                    </div>
+                </div>
+        
+                <div class="d-flex align-items-center justify-content-center mt-5">
+                    <button id="botaoReserva" class="btn d-flex align-items-center justify-content-center btn-reservar">Reserve sua Moto</button>
+                </div>
+            </div>
+        
+            <div class="w-50" style="border-radius: 10px; background: #f9f6f6; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);">
+                <div class="motos-list-container" style="background: #f9f6f6; overflow-y: auto;">
+                    <div class="motos-list d-flex flex-column align-items-center justify-content-justify" id="motos-list" style="cursor: pointer;">
+                        <!-- A lista de motos será gerada aqui pelo JavaScript -->
+                    </div>       
+                </div>
+            </div>
+        </section>
+        
+
+    
+        <section id="reserva">reserva</section>
+        <section id="retirada">retirada</section>
+        <section id="devolucao">devolução</section>
+
+        <section id="seguro" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="rounded p-5" style="background: #d0d0d0;">
+                <div class="text-center">
+                    <h2 style="font-size: 24px; font-weight: 700; margin-bottom: 30px;">Contrato de Seguro</h2>
+                </div>
+                <p>
+                    <span style="font-weight: 700;">1.1 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </p>
+                <p style="margin-top: -15px;">
+                    Libero provident asperiores beatae amet! Voluptate voluptatum repudiandae voluptas, 
+                    nesciunt quia sed, praesentium eligendi dicta at, illum quibusdam qui rem assumenda cumque.
+                </p>
+                
+                <p>
+                    <span style="font-weight: 700; ">1.2 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </p>
+                <p style="margin-top: -15px;">
+                    Libero provident asperiores beatae amet! Voluptate voluptatum repudiandae voluptas, 
+                    nesciunt quia sed, praesentium eligendi dicta at, illum quibusdam qui rem assumenda cumque.
+                </p>
+                
+                <p>
+                    <span style="font-weight: 700; ">1.3 - Lorem ipsum dolor sit amet consectetur adipisicing elit.</span>
+                </p>
+                <p style="margin-top: -15px;">
+                    Libero provident asperiores beatae amet! Voluptate voluptatum repudiandae voluptas, 
+                    nesciunt quia sed, praesentium eligendi dicta at, illum quibusdam qui rem assumenda cumque.
+                </p>
+                
+               <div class="d-flex flex-column">
+                <div>
+                    <input type="checkbox" id="meuCheckbox" style="margin-right: 10px;">
+                    <label for="meuCheckbox">Ao clicar você concorda com os termos de contratação.</label>
+                </div>
+                
+
+                <button style="background: rgb(10, 80, 10); color: #fff; font-size: 16px;" class="border-0 rounded p-2">Contratar</button>
+               </div>
+            </div>
+        </section>
+        
+    </style>
+</head>
+<body>
+
+    <section id="devolucao" class="container-fluid bg-light text-dark py-5 with-hover-lights" style="height: 100vh;">
+        <div class="container">
+            <div class="hover-lights-container">
+                <h2 class="text-center mb-4">Devolução de Moto Elétrica</h2>
+            <form action="#" method="post">
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <label for="nomeCompletoDevolucao" class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" id="nomeCompletoDevolucao" placeholder="Ex: José Antonio" required>
+                    </div>
+    
+                    <div class="col-md-6 mb-3">
+                        <label for="emailDevolucao" class="form-label">E-mail</label>
+                        <input type="email" class="form-control" id="emailDevolucao" placeholder="Ex: jose@example.com" required>
+                    </div>
+    
+                    <div class="col-md-6 mb-3">
+                        <label for="telefoneDevolucao" class="form-label">Telefone</label>
+                        <input type="tel" class="form-control" id="telefoneDevolucao" placeholder="Ex: (11) 91234-5678" required>
+                    </div>
+    
+                    <div class="col-md-6 mb-3">
+                        <label for="dataDevolucao" class="form-label">Data da Devolução</label>
+                        <input type="date" class="form-control" id="dataDevolucao" required>
+                    </div>
+    
+                    <div class="col-md-12 mb-3">
+                        <label for="comentariosDevolucao" class="form-label">Comentários Adicionais</label>
+                        <textarea class="form-control" id="comentariosDevolucao" rows="4" placeholder="Digite aqui seus comentários adicionais"></textarea>
+                    </div>
+                </div>
+    
+                <div class="row">
+                    <div class="col-md-12">
+                        <button type="submit" class="btn btn-primary">Iniciar Processo de Devolução</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+
+
+    <style>
+        .faq-container {
+            max-width: 600px; /* Defina a largura máxima do quadrado azul */
+            margin: auto; /* Centraliza o conteúdo */
+            background-color: #535b63; /* Cor de fundo do quadrado azul */
+            padding: 20px; /* Espaçamento interno do quadrado azul */
+            border-radius: 10px; /* Borda arredondada do quadrado azul */
+        }
+
+        .faq-box {
+            position: relative;
+            overflow: hidden;
+            margin-bottom: 10px; /* Espaçamento entre cada caixa de FAQ */
+            color: #fff; /* Cor do texto dentro do quadrado azul */
+        }
+
+        .faq-question {
+            cursor: pointer;
+            margin-bottom: 10px; /* Espaçamento abaixo da pergunta */
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+
+        .faq-box:hover .faq-answer {
+            max-height: 200px; /* Ajuste conforme necessário */
+        }
+
+        .icon {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            cursor: pointer;
+            transition: transform 0.3s ease-out;
+        }
+
+        .faq-box:hover .icon {
+            transform: rotate(180deg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="faq-container">
+        <div class="faq-box">
+            <h3 class="faq-question">Dúvidas frequentes</h3>
+        </div>
+    
+        <div class="faq-box">
+            <h3 class="faq-question">Posso alugar com o nome sujo?</h3>
+            <p class="faq-answer">A EasyRider não realiza consulta no Serasa. Isso implica que é possível obter aprovação para o aluguel de uma EasyRider, mesmo em casos de restrições de crédito. Além disso, não é exigido o uso de cartão de crédito nem a necessidade de um fiador.</p>
+            <div class="icon">&#x25BC;</div>
+        </div>
+    
+        <div class="faq-box">
+            <h3 class="faq-question">O que eu preciso para alugar uma EasyRider?</h3>
+            <p class="faq-answer">É necessário possuir uma Carteira Nacional de Habilitação (CNH) na categoria A para realizar o aluguel. Vale ressaltar que a habilitação provisória também é aceita. Recomenda-se não esquecer de portar o documento no momento da retirada da motocicleta.</p>
+            <div class="icon">&#x25BC;</div>
+        </div>
+    
+        <div class="faq-box">
+            <h3 class="faq-question">Quanto tempo demora para meu cadastro ser aprovado?</h3>
+            <p class="faq-answer">A EasyRider reconhece a importância da motocicleta como sua ferramenta de trabalho, e, portanto, efetuará a liberação do seu cadastro de maneira expedita. O período de análise está estabelecido em até 2 dias úteis. Solicitamos que esteja atento, pois a EasyRider notificará a aprovação por meio de e-mail e alerta no aplicativo.</p>
+            <div class="icon">&#x25BC;</div>
+        </div>
+    
+        <div class="faq-box">
+            <h3 class="faq-question">O que está incluso no aluguel?</h3>
+            <p class="faq-answer">Todos os planos oferecidos pela EasyRider englobam, além do veículo, benefícios como Assistência 24 horas, serviço de resgate, plano de proteção para terceiros, disponibilidade de moto reserva e manutenção preventiva.</p>
+            <div class="icon">&#x25BC;</div>
+        </div>
+    
+        <div class="faq-box">
+            <h3 class="faq-question">O que acontece em casos de acidente, roubo ou se a moto for apreendida?</h3>
+            <p class="faq-answer">Em situações de acidente, roubo ou apreensão da moto, solicitamos que entre imediatamente em contato com nosso canal de suporte via WhatsApp. Nessas circunstâncias, pode haver a cobrança de uma taxa de coparticipação pelo acionamento da proteção; recomendamos consultar as taxas em nosso tarifário. A disponibilidade de uma moto reserva estará sujeita à análise do ocorrido.</p>
+            <div class="icon">&#x25BC;</div>
+        </div>
+    </div>
+
+<!-- Adicione mais perguntas/respostas conforme necessário -->
+
+<script>
+    const faqBoxes = document.querySelectorAll('.faq-box');
+
+    faqBoxes.forEach(box => {
+        const icon = box.querySelector('.icon');
+        const answer = box.querySelector('.faq-answer');
+
+        icon.addEventListener('click', () => {
+            answer.style.maxHeight = answer.style.maxHeight ? null : answer.scrollHeight + 'px';
+            icon.innerHTML = answer.style.maxHeight ? '&#x25B2;' : '&#x25BC;';
+        });
+    });
+</script>
+
+
+   
+
+        <section id="planos" class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
+            <div class="d-flex justify-content-between align-items-center gap w-100">
+                <div class="d-flex flex-column align-items-center rounded" style="background: #e7e6e6; width: 350px; height: 400px;">
+                    <h2 class="text-center" style="font-size: 20px; font-weight: 500; padding-top: 10px; opacity: 60%;">BÁSICO</h2>
+                    <span style="background: #26A6D1; color: #fff; width: 100%; height: 55px; text-align: center; font-size: 35px; font-weight: 600;">
+                        $ 29
+                    </span>
+        
+                    <ul style="display: grid; gap: 10px; margin-left: -50px; list-style: none; font-size: 18px; opacity: 80; margin-top: 40px;">
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                    </ul>
+        
+                    <button class="text-decoration-none rounded border-0 text-center p-1 mt-5 w-50" style="background: #26A6D1; color: #fff;">
+                        <a class="text-decoration-none" style="color: #fff;" href="#seguro">
+                            Assine agora
+                        </a>
+                    </button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center rounded" style="background: #e7e6e6; width: 350px; height: 400px;">
+                    <h2 class="text-center" style="font-size: 20px; font-weight: 500; padding-top: 10px; opacity: 60%;">PADRÃO</h2>
+                    <span style="background: #e5126f; color: #fff; width: 100%; height: 55px; text-align: center; font-size: 35px; font-weight: 600;">
+                        $ 29
+                    </span>
+        
+                    <ul style="display: grid; gap: 10px; margin-left: -50px; list-style: none; font-size: 18px; opacity: 80; margin-top: 40px;">
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                    </ul>
+        
+                    <button class="text-decoration-none rounded border-0 text-center p-1 mt-5 w-50" style="background: #e5126f; color: #fff;">
+                        <a class="text-decoration-none" style="color: #fff;" href="#seguro">
+                            Assine agora
+                        </a>
+                    </button>
+                </div>
+
+                <div class="d-flex flex-column align-items-center rounded" style="background: #e7e6e6; width: 350px; height: 400px;">
+                    <h2 class="text-center" style="font-size: 20px; font-weight: 500; padding-top: 10px; opacity: 60%;">AVANÇADO</h2>
+                    <span style="background: #f1c50e; color: #fff; width: 100%; height: 55px; text-align: center; font-size: 35px; font-weight: 600;">
+                        $ 29
+                    </span>
+        
+                    <ul style="display: grid; gap: 10px; margin-left: -50px; list-style: none; font-size: 18px; opacity: 80; margin-top: 40px;">
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                        <li>1 usuário completo</li>
+                    </ul>
+        
+                    <button class="text-decoration-none rounded border-0 text-center p-1 mt-5 w-50" style="background: #f1c50e; color:  #fff;">
+                        <a class="text-decoration-none" style="color: #fff;" href="#seguro">
+                            Assine agora
+                        </a>
+                    </button>
+                </div>
+                
+            </div>
+        </section>
+        
+
+        <section id="estacoes" class="gap container d-flex justify-content-center align-items-center" style="min-height: 100vh;">
+            <div class="text-center" style="margin-top: 100px;">
+                <h2 style="font-size: 20px; font-weight: 500;">Baterias carregadas sempre disponíveis perto de você</h2>
+                <span style="font-size: 16px; opacity: 50%;">Com nossas estações de troca, autonomia não é um problema</span>
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <!-- Primeira coluna -->
+                        <div class="w-100">
+                            <div class="rounded p-4 card-services" style="border: 1px solid #26A6D1;">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 18H3C2.46957 18 1.96086 17.7893 1.58579 17.4142C1.21071 17.0391 1 16.5304 1 16V8C1 7.46957 1.21071 6.96086 1.58579 6.58579C1.96086 6.21071 2.46957 6 3 6H6.19M15 6H17C17.5304 6 18.0391 6.21071 18.4142 6.58579C18.7893 6.96086 19 7.46957 19 8V16C19 16.5304 18.7893 17.0391 18.4142 17.4142C18.0391 17.7893 17.5304 18 17 18H13.81" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M23 13V11" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><path d="M11 6L7 12H13L9 18" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                <h3 class="h3">Bateria Garantida</h3>
+                                <p class="p">Chegou, trocou, saiu. Leva menos de 3 minutos.</p>
+                            </div>
+                        </div>
+                        <div class="w-100 mt-4">
+                            <div class="rounded p-4 card-services" style="border: 1px solid #26A6D1;">
+                                <svg width="33" height="32" viewBox="0 0 33 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_23_1729)"><path d="M1.83594 15.6667C1.83594 15.6667 7.16927 5 16.5026 5C25.8359 5 31.1693 15.6667 31.1693 15.6667C31.1693 15.6667 25.8359 26.3333 16.5026 26.3333C7.16927 26.3333 1.83594 15.6667 1.83594 15.6667Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16.5 20C18.7091 20 20.5 18.2091 20.5 16C20.5 13.7909 18.7091 12 16.5 12C14.2909 12 12.5 13.7909 12.5 16C12.5 18.2091 14.2909 20 16.5 20Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path></g><defs><clipPath id="clip0_23_1729"><rect width="32" height="32" fill="white" transform="translate(0.5)"></rect></clipPath></defs></svg>
+                                <h3 class="h3">Troca assistida</h3>
+                                <p class="p">Tenha um atendente sempre disponível para facilitar sua troca.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- Segunda coluna -->
+                        <div class="w-100">
+                            <div class="rounded p-4 card-services" style="border: 1px solid #26A6D1;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0003 29.3337C23.3641 29.3337 29.3337 23.3641 29.3337 16.0003C29.3337 8.63653 23.3641 2.66699 16.0003 2.66699C8.63653 2.66699 2.66699 8.63653 2.66699 16.0003C2.66699 23.3641 8.63653 29.3337 16.0003 29.3337Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M16 8V16L21.3333 18.6667" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>                                <h3 class="h3">Rede 24 horas</h3>
+                                <p class="p">Nossas estações operam 365 dias no ano e algumas 24 horas.</p>
+                            </div>
+                        </div>
+                        <div class="w-100 mt-4">
+                            <div class="rounded p-4 card-services" style="border: 1px solid #26A6D1;">
+                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M24 10.667H25.3333C26.7478 10.667 28.1044 11.2289 29.1046 12.2291C30.1048 13.2293 30.6667 14.5858 30.6667 16.0003C30.6667 17.4148 30.1048 18.7714 29.1046 19.7716C28.1044 20.7718 26.7478 21.3337 25.3333 21.3337H24" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M2.66699 10.667H24.0003V22.667C24.0003 24.0815 23.4384 25.438 22.4382 26.4382C21.438 27.4384 20.0815 28.0003 18.667 28.0003H8.00033C6.58584 28.0003 5.22928 27.4384 4.22909 26.4382C3.2289 25.438 2.66699 24.0815 2.66699 22.667V10.667Z" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M8 1.33301V5.33301" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M13.333 1.33301V5.33301" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path><path d="M18.667 1.33301V5.33301" stroke="black" stroke-width="2.66667" stroke-linecap="round" stroke-linejoin="round"></path></svg>
+                                <h3 class="h3">Atendimento de qualidade</h3>
+                                <p class="p">Acesso a banheiro, água, café e muito mais para todos...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map" style="width: 500px; height: 80vh;"></div>
+        </section>
+        
+            
+        <section id="conhecer" class="container d-flex align-items-center justify-content-center" style="height: 100vh;">
+            <div class="container mt-5 d-flex flex-column align-items-center justify-content-center">
+                <h2 style="margin-bottom: 40px;">Formulário de Contato</h2>
+                <form>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="nomeCompleto" class="form-label">Nome Completo</label>
+                            <input type="text" class="form-control" id="nomeCompleto" placeholder="Ex: José Antonio">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="cpf" class="form-label">CPF</label>
+                            <input type="text" class="form-control" id="cpf" placeholder="Ex: 000.000.000-00">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="celular" class="form-label">Celular</label>
+                            <input type="tel" class="form-control" id="celular" placeholder="Ex: (11) 91233-5678">
+                        </div>
+        
+                        <div class="col-md-6 mb-3">
+                            <label for="bairro" class="form-label">Bairro</label>
+                            <input type="text" class="form-control" id="bairro" placeholder="Ex: Vila Olímpia">
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mb-3">
+                        <label for="comoConheceu" class="form-label">Como conheceu a EasyRider?</label>
+                        <select class="form-select d-flex" id="comoConheceu">
+                            <option value="amigos">Amigos</option>
+                            <option value="internet">Facebook</option>
+                            <option value="internet">Instagram</option>
+                            <option value="internet">Linkedin</option>
+                            <option value="outro">Outro</option>
+                        </select>
+                    </div>
+                    
+                    
+
+                    <div class="row">
+                        <div class="col-md-12">
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+      
+        <footer style="width: 100%; background: #26A6D1;">
+            <div class="border-bottom container">
+                <div class="d-flex justify-content-between align-items-center" style="color: #fff;">
+                    <img src="./assets/logo.png" style="width: 300px; filter: invert(100%);"/>
+        
+                    <div>
+                        <h3 style="font-size: 24px; font-weight: 700;">Contato</h3>
+                        <p style="font-size: 15px; opacity: 80%;">easyrider@gmail.com</p>
+                        <p style="font-size: 15px; opacity: 80%;">Rua Santa Justina, 434 - São Paulo, SP - 04545-042</p>
+                        <p style="font-size: 15px; opacity: 80%;">Todos direitos reservados - Vammo LTDA. 47.418.909/0001-28</p>
+                    </div>
+        
+                    <div class="d-flex">
+                        <a href="" style="margin-left: 30px;">
+                            <img src="./assets/843786_whatsapp_icon.svg" style="width: 24px; filter: invert(100%);"/>
+                        </a>
+                        <a href="" style="margin-left: 30px;">
+                            <img src="./assets/104493_linkedin_icon.svg" style="width: 24px; filter: invert(100%);"/>
+                        </a>
+                        <a href="" style="margin-left: 30px;">
+                            <img src="./assets/1161953_instagram_icon.svg" style="width: 24px; filter: invert(100%);"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Mova o <span> de ano para dentro da div com a classe "container" e adicione estilos para torná-lo branco -->
+            <div class="container text-center" style="color: #fff; padding-top: 10px;">
+                <span id="ano" style="color: #fff; opacity: 80%;"></span>
+            </div>
+        </footer>
+        
+        
+        
+    </main>
+    
+
+    <!-- bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- js -->
+    <script src="./script.js"></script>
+    <!--google maps-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+
+
+
+</body>
+</html>
